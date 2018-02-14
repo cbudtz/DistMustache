@@ -19,7 +19,7 @@ function loadNotes(){
 }
 
 function createNote(inputField){
-    input = document.getElementById(inputField).value;
+    var input = document.getElementById(inputField).value;
     fetch("rest/noterest",{method:'post',
         body:JSON.stringify({tekst:input}),
         headers: {
